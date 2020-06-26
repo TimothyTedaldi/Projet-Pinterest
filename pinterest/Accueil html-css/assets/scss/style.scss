@@ -1,0 +1,53 @@
+#columns {
+      column-width: 155px;
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+}
+   
+div#columns figure {
+  background: #fefefe;
+  margin: 0;
+  padding: 10px 5px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+}
+   
+div#columns figure img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+   
+div#columns figure figcaption {
+  font-size: .9rem;
+    color: #444;
+  line-height: 1.5;
+}
+
+div#columns small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+   
+div#columns:hover figure:not(:hover) {
+    opacity: 0.4;
+}
+   
+@media screen and (max-width: 750px) { 
+  #columns { column-gap: 10px; }
+  #columns figure { width: 100%; }
+}
+
+
+   
