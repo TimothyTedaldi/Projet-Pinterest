@@ -24,6 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile/{user}', 'ProfileController@show')->name('profile.show');
 
-Route::group(['middleware' => 'auth'], function() {
+Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', 'dashboardController@index');
 });
