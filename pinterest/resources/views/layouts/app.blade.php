@@ -55,6 +55,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a href="{{ route('details.create') }}" class="dropdown-item">Créer un partage</a>
+                                    <!-- créer un partage dans la nav du compte, à modifier si ne convient pas-->
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
