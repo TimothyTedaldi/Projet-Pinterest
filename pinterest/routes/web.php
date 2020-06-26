@@ -28,6 +28,7 @@ Route::get('/details/create', 'DetailController@create')->name('details.create')
 
 Route::post('/details', 'DetailController@store')->name('details.store');
 
-Route::group(['middleware' => 'auth'], function() {
+
+Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', 'dashboardController@index');
 });

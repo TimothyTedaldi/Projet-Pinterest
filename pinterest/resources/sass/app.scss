@@ -1,12 +1,7 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
 // This is the single file output by sass. It is intended to ONLY @import other files.
+
+// BOOTSTRAP
+@import "~bootstrap/scss/bootstrap";
 
 // 1 - HELPERS
 @import "1-helpers/variables";
